@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <form [formGroup]="addressForm" novalidate (onSubmit)="onSubmit()">
+    <form [formGroup]="addressForm" novalidate (ngSubmit)="login()">
       <mat-card class="shipping-card">
         <!-- <mat-card-header class="full-width">
           <mat-card-title class="form-title">Login</mat-card-title>
@@ -32,7 +32,7 @@
           </div>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-raised-button color="primary" type="submit">Submit</button>
+          <button mat-raised-button color="primary" type="submit">Login</button>
         </mat-card-actions>
       </mat-card>
     </form>

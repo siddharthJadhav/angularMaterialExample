@@ -14,7 +14,8 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder) {}
 
-  onSubmit() {
+  login() {
+    console.log('click on login')
     alert('Thanks!');
   }
 }

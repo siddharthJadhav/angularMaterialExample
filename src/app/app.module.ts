@@ -14,7 +14,7 @@ import { TableComponent } from './components/table/table.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppRountingModule } from './app-rounting.module';
-import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,8 @@ import { RouterModule } from '@angular/router';
     MatSortModule,
     MatGridListModule,
     MatMenuModule,
-    AppRountingModule
+    AppRountingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
