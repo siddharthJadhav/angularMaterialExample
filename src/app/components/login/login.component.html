@@ -1,36 +1,41 @@
-<form [formGroup]="addressForm" novalidate (onSubmit)="onSubmit()">
-  <mat-card class="shipping-card">
-    <!-- <mat-card-header class="full-width">
-      <mat-card-title class="form-title">Login</mat-card-title>
-    </mat-card-header> -->
-    <div class="form-title fill-width">Login</div>
-    <mat-card-content>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Username" formControlName="username">
-            <mat-error *ngIf="addressForm.controls['username'].hasError('required')">
-              User name is <strong>required</strong>
-            </mat-error>
-            <mat-error *ngIf="addressForm.controls['username'].hasError('minlength')">
-              Minimum 3 charater are required
-            </mat-error>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput type="password" placeholder="Password" formControlName="password">
-            <mat-error *ngIf="addressForm.controls['password'].hasError('required')">
-              Password is <strong>required</strong>
-            </mat-error>
-          </mat-form-field>
-        </div>
-      </div>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Submit</button>
-    </mat-card-actions>
-  </mat-card>
-</form>
+<div class="row">
+  <div class="col">
+    <form [formGroup]="addressForm" novalidate (onSubmit)="onSubmit()">
+      <mat-card class="shipping-card">
+        <!-- <mat-card-header class="full-width">
+          <mat-card-title class="form-title">Login</mat-card-title>
+        </mat-card-header> -->
+        <div class="form-title fill-width">Login</div>
+        <mat-card-content>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Username" formControlName="username">
+                <mat-error *ngIf="addressForm.controls['username'].hasError('required')">
+                  User name is <strong>required</strong>
+                </mat-error>
+                <mat-error *ngIf="addressForm.controls['username'].hasError('minlength')">
+                  Minimum 3 charater are required
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="full-width">
+                <input matInput type="password" placeholder="Password" formControlName="password">
+                <mat-error *ngIf="addressForm.controls['password'].hasError('required')">
+                  Password is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" type="submit">Submit</button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+
+  </div>
+</div>
